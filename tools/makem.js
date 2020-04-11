@@ -156,6 +156,7 @@ FLAGS += ' -Wno-warn-absolute-paths ';
 FLAGS += ' -s TOTAL_MEMORY=' + MEM + ' ';
 FLAGS += ' -s USE_ZLIB=1';
 FLAGS += ' -s USE_LIBJPEG';
+FLAGS += ' -s FORCE_FILESYSTEM=1 '; // Support for the "FS" global
 FLAGS += ' --memory-init-file 0 '; // for memless file
 
 var WASM_FLAGS = ' -s BINARYEN_TRAP_MODE=clamp'
